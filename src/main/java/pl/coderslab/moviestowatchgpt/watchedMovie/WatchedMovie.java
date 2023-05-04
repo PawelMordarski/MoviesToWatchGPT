@@ -1,4 +1,4 @@
-package pl.coderslab.moviestowatchgpt.watchedMovies;
+package pl.coderslab.moviestowatchgpt.watchedMovie;
 
 
 import lombok.*;
@@ -14,7 +14,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class WatchedMovies {
+public class WatchedMovie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
