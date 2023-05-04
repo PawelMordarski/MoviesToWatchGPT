@@ -12,14 +12,18 @@ import javax.persistence.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class Users {
+@Builder
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = true, unique = true)
+    @Column(nullable = false, unique = true)
     private String name;
+
+    @Column(nullable = false)
+    private Integer age;
 
 
 }

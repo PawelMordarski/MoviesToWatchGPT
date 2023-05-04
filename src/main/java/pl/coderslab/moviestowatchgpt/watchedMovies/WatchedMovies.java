@@ -13,17 +13,16 @@ import java.util.Date;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class WatchedMovies {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = true, unique = true)
+    @Column(nullable = false, unique = true)
     private String title;
 
     private Date date;
-
     private Integer rate;
-
 }
