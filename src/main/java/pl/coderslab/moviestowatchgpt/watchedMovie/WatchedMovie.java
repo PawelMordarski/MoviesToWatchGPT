@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table
+@Table(name = "watched_movies")
 @Getter
 @Setter
 @ToString
@@ -22,7 +22,12 @@ public class WatchedMovie {
 
     @Column(nullable = false, unique = true)
     private String title;
-
-    private Date date;
+//
+//    private Date date;
     private Integer rate;
+
+    @Column(length = 1000)
+    private String comment;
+
+
 }

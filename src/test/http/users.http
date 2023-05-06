@@ -1,9 +1,0 @@
-### Create user
-POST http://localhost:8080/app/users
-Content-Type: application/json
-
-{
-  "name": "Pawel"
-}
-
-
